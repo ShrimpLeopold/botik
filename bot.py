@@ -5,6 +5,8 @@ import datetime
 conn = sqlite3.connect("books.db")
 cursor = conn.cursor()
 
+
+
 # Создание таблицы
 cursor.execute("""CREATE TABLE books
                   (isbn text, taken text, date_taken text,
